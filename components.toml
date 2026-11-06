@@ -1,0 +1,29 @@
+# The repositories microduck-software assembles. scripts/fetch.py clones each into
+# components/<name>/ (ignored by git) and checks out its ref, or the commit a
+# release in releases/ names.
+#
+#   partial: clone without file contents until they are needed (large histories)
+#   sparse:  check out only these directories
+
+[rl]
+# Training: HD-1910 tasks, ROCm, acceptance, sim2sim.
+url = "https://github.com/harrysungit/microduck-rl.git"
+ref = "main"
+
+[robotd]
+# The robot's runtime with a Feetech bus: fanhao375's HD-1910 build of the official
+# daemon, with our fixes on a branch (IMU boards with seller firmware, servo turn
+# counter, fall handling), proposed back to fanhao375.
+url = "https://github.com/harrysungit/Microduck-kissqy.git"
+ref = "harry/hd1910-v167-fixes"
+partial = true
+sparse = ["microduck-hd1910/firmware"]
+
+[studio]
+# Microduck Studio, the web console on the robot. No changes of ours yet, so this
+# is fanhao375's own; it moves to a branch of harrysungit/microduck-replica once
+# there are.
+url = "https://github.com/fanhao375/microduck-replica.git"
+ref = "master"
+partial = true
+sparse = ["software/studio"]
