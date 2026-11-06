@@ -5,19 +5,21 @@ Each item says what "done" means. Training has its own roadmap in
 
 ## Runtime
 
-- [ ] **Our robotd fixes on fanhao375's current release.** The branch in
-  `components.toml` is based on fanhao375's 20261027 runtime; fanhao375 has
-  released a newer one since (control.48). Done: the fixes rebased onto it,
-  the DXL2 fallback kept only where the new code does not already read seller
-  firmware, the tests passing, and the changes proposed to fanhao375.
+- [x] **Our robotd fixes on fanhao375's current release.** The branch in
+  `components.toml` carries them on fanhao375's control.48 release: no new
+  test failures, and our 13 tests pass. control.48 still identifies DXL2 IMUs
+  by READ only, so the seller-firmware fallback stays.
+- [ ] **Propose them to fanhao375.** Done: a pull request per fix, merged or
+  answered.
 - [ ] **First powered run.** Done: robotd from our branch drives all 15
   HD-1910 servos and the IMU on the robot, `zero3w_check.sh` and the IMU axis
   check pass, recorded.
 
 ## Board
 
-- [ ] **V1.12J image scripts.** Done: a script that turns a released
-  fanhao375 image into a V1.12J one (the four changes in
+- [ ] **V1.12J image scripts.** The control.48 runtime belongs on fanhao375's
+  11-04 image, which has no V1.12J version yet. Done: a script that turns a
+  released fanhao375 image into a V1.12J one (the four changes in
   [board/README.md](../board/README.md)), checking the result without root.
 
 ## Studio

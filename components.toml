@@ -12,10 +12,10 @@ ref = "main"
 
 [robotd]
 # The robot's runtime with a Feetech bus: fanhao375's HD-1910 build of the official
-# daemon, with our fixes on a branch (IMU boards with seller firmware, servo turn
-# counter, fall handling), proposed back to fanhao375.
+# daemon (release control.48), with our fixes on top (IMU boards with seller
+# firmware, servo turn counter, fall handling), to be proposed back to fanhao375.
 url = "https://github.com/harrysungit/Microduck-kissqy.git"
-ref = "harry/hd1910-v167-fixes"
+ref = "harry/hd1910-control48"
 partial = true
 sparse = ["microduck-hd1910/firmware"]
 
