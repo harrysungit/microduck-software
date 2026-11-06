@@ -11,12 +11,11 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-STUDIO_BUS = ROOT / "components/studio/software/studio/studio/bus"
-sys.path.insert(0, str(STUDIO_BUS))
+sys.path.insert(0, str(ROOT / "components/studio/software/studio"))
 sys.path.insert(0, str(ROOT / "tools"))
 pytest.importorskip("serial")
-feetech = pytest.importorskip("feetech", reason="run scripts/fetch.py to fetch the Studio component")
-sim_bus = pytest.importorskip("sim_bus", reason="run scripts/fetch.py to fetch the Studio component")
+feetech = pytest.importorskip("studio.bus.feetech", reason="run scripts/fetch.py to fetch the Studio component")
+sim_bus = pytest.importorskip("studio.bus.sim_bus", reason="run scripts/fetch.py to fetch the Studio component")
 import hd1910_protection as hp  # noqa: E402
 
 ALL = [10, 11, 12, 13, 14, 20, 21, 22, 23, 24, 30, 31, 32, 33, 34]

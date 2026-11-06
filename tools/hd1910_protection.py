@@ -26,11 +26,12 @@ import argparse
 import sys
 from pathlib import Path
 
-STUDIO_BUS = Path(__file__).resolve().parents[1] / "components/studio/software/studio/studio/bus"
-if STUDIO_BUS.is_dir():
-    sys.path.insert(0, str(STUDIO_BUS))
-
-import feetech  # noqa: E402
+STUDIO = Path(__file__).resolve().parents[1] / "components/studio/software/studio"
+if (STUDIO / "studio/bus/feetech.py").is_file():
+    sys.path.insert(0, str(STUDIO))
+    from studio.bus import feetech  # noqa: E402
+else:
+    import feetech  # noqa: E402  # feetech.py next to this file
 
 WANT = 1 | 4 | 8            # 13: voltage + overheat + over-current
 BITS = {1: "voltage", 2: "encoder", 4: "overheat", 8: "over-current"}
