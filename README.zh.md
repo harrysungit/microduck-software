@@ -23,15 +23,15 @@ python3 scripts/fetch.py
 
 ## 从训练到机器人
 
-1. **训练**：用 `rl` 训一个技能（或者用它的训练队列复现那五个验收通过的技能）。
-2. **检查**：`rl` 的验收门和 sim2sim。两项没都过的策略不上机器人。
+1. **训练**：用 `rl` 训一个技能。
+2. **检查**：`rl` 的验收门和 sim2sim，再人工核验完整动作视频。三项没都过的策略不上机器人。
 3. **导出**：用 Pollen 的导出脚本导出 ONNX；接口见 [`rl` 的 DEPLOY.md](https://github.com/harrysungit/microduck-rl/blob/main/docs/DEPLOY.md)。
 4. **启动主控板**并装上运行时：[board/](board/README.md)。
 5. **检查 IMU**：运行时能读哪些板子，装得方向对不对：[features/imu/](features/imu/README.md)。
 6. **保护舵机**：第一次上电运行前，用 [tools/hd1910_protection.py](tools/hd1910_protection.py) 打开电压、过流等卸载保护。
 7. 从 Studio **运行**。
 
-在机器人上一起跑通过的一组组件版本，记成 [releases/](releases/README.md) 里的一个版本。目前还没有：本项目的策略还没在机器人上跑过。
+在机器人上一起跑通过的一组组件版本，记成 [releases/](releases/README.md) 里的一个版本。目前还没有：还没有一组版本在机器人上验证通过。
 
 ## 目录
 

@@ -27,10 +27,10 @@ python3 scripts/fetch.py
 
 ## From training to the robot
 
-1. **Train** a skill with `rl` (or reproduce the five accepted ones with its
-   training queue).
-2. **Check** it: `rl`'s acceptance gate and sim2sim. A policy that does not
-   pass both does not go on a robot.
+1. **Train** a skill with `rl`.
+2. **Check** it: `rl`'s acceptance gate and sim2sim, then a review of its
+   full-motion videos. A policy that does not pass all three does not go on a
+   robot.
 3. **Export** the ONNX with Pollen's exporter; the interface is in
    [`rl`'s DEPLOY.md](https://github.com/harrysungit/microduck-rl/blob/main/docs/DEPLOY.md).
 4. **Bring the board up** and put the runtime on it: [board/](board/README.md).
@@ -42,8 +42,8 @@ python3 scripts/fetch.py
 7. **Run** it from Studio.
 
 A set of component versions that has run together on a robot becomes a
-release in [releases/](releases/README.md). There is none yet: no policy from
-this project has run on a robot.
+release in [releases/](releases/README.md). There is none yet: no set has
+passed on a robot so far.
 
 ## Layout
 
