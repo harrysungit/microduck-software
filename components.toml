@@ -13,17 +13,18 @@ ref = "main"
 [robotd]
 # The robot's runtime with a Feetech bus: fanhao375's HD-1910 build of the official
 # daemon (release control.48), with our fixes on top (IMU boards with seller
-# firmware, servo turn counter, fall handling), to be proposed back to fanhao375.
+# firmware, servo turn counter, fall handling, a read-only IMU check at API 44),
+# to be proposed back to fanhao375. This is the build that runs on the robot.
 url = "https://github.com/harrysungit/Microduck-kissqy.git"
 ref = "harry/hd1910-control48"
 partial = true
 sparse = ["microduck-hd1910/firmware"]
 
 [studio]
-# Microduck Studio, the web console on the robot. No changes of ours yet, so this
-# is fanhao375's own; it moves to a branch of harrysungit/microduck-replica once
-# there are.
-url = "https://github.com/fanhao375/microduck-replica.git"
-ref = "master"
+# Microduck Studio, the web console on the robot: fanhao375's, with our servo zero
+# trim, joint play, three-view, the DXL2 IMU fix in HOME collection and a speaker
+# volume control on top. This is the build that runs on the robot.
+url = "https://github.com/harrysungit/microduck-replica.git"
+ref = "harry/studio-speaker-volume"
 partial = true
 sparse = ["software/studio"]

@@ -15,7 +15,7 @@ this project is the software side.
 |---|---|---|
 | `rl` | [harrysungit/microduck-rl](https://github.com/harrysungit/microduck-rl) | Training on top of Pollen's microduck_rl: HD-1910 tasks, ROCm, acceptance gate, sim2sim |
 | `robotd` | [harrysungit/Microduck-kissqy](https://github.com/harrysungit/Microduck-kissqy) | The robot's runtime: fanhao375's HD-1910 build of the official daemon, with our fixes on a branch |
-| `studio` | [fanhao375/microduck-replica](https://github.com/fanhao375/microduck-replica) | Microduck Studio, the web console on the robot (`software/studio`) |
+| `studio` | [harrysungit/microduck-replica](https://github.com/harrysungit/microduck-replica) | Microduck Studio, the web console on the robot (`software/studio`): fanhao375's, with our changes on a branch |
 | this repository | | IMU compatibility, board bring-up, servo tools, and every feature that is not a change to one of the above |
 
 [components.toml](components.toml) pins each one. Fetch them into

@@ -12,7 +12,7 @@
 |---|---|---|
 | `rl` | [harrysungit/microduck-rl](https://github.com/harrysungit/microduck-rl) | 在 Pollen 的 microduck_rl 之上训练：HD-1910 任务、ROCm、验收门、sim2sim |
 | `robotd` | [harrysungit/Microduck-kissqy](https://github.com/harrysungit/Microduck-kissqy) | 机器人上的运行时：fanhao375 为 HD-1910 构建的官方守护进程，我们的修复在一个分支上 |
-| `studio` | [fanhao375/microduck-replica](https://github.com/fanhao375/microduck-replica) | Microduck Studio，机器人上的网页中控（`software/studio`） |
+| `studio` | [harrysungit/microduck-replica](https://github.com/harrysungit/microduck-replica) | Microduck Studio，机器人上的网页中控（`software/studio`）：fanhao375 的版本，我们的改动在一个分支上 |
 | 本仓库 | | IMU 兼容、主控板启动、舵机工具，以及所有不属于上面几个组件代码的功能 |
 
 [components.toml](components.toml) 固定了每个组件的版本。把它们拉到 `components/` 下（部分克隆，只检出用到的目录）：
