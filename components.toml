@@ -11,10 +11,10 @@ url = "https://github.com/harrysungit/microduck-rl.git"
 ref = "main"
 
 [robotd]
-# The robot's runtime with a Feetech bus: fanhao375's HD-1910 build of the official
-# daemon (release control.48), with our fixes on top (IMU boards with seller
-# firmware, servo turn counter, fall handling, a read-only IMU check at API 44),
-# to be proposed back to fanhao375. This is the build that runs on the robot.
+# The robot's runtime with a Feetech bus: our fork of kissqy's Microduck-kissqy,
+# with fanhao375's HD-1910 build (release control.48) and our fixes on top (IMU
+# boards with seller firmware, servo turn counter, fall handling, a read-only IMU
+# check at API 44). This is the build that runs on the robot.
 url = "https://github.com/harrysungit/Microduck-kissqy.git"
 ref = "harry/hd1910-control48"
 partial = true

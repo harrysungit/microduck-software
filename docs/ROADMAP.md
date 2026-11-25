@@ -9,8 +9,6 @@ Each item says what "done" means. Training has its own roadmap in
   `components.toml` carries them on fanhao375's control.48 release: no new
   test failures, and our 13 tests pass. control.48 still identifies DXL2 IMUs
   by READ only, so the seller-firmware fallback stays.
-- [ ] **Propose them to fanhao375.** Done: a pull request per fix, merged or
-  answered.
 - [ ] **First powered run.** Done: robotd from our branch drives all 15
   HD-1910 servos and the IMU on the robot, `zero3w_check.sh` and the IMU axis
   check pass, recorded.

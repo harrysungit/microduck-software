@@ -11,7 +11,7 @@
 | 组件 | 仓库 | 内容 |
 |---|---|---|
 | `rl` | [harrysungit/microduck-rl](https://github.com/harrysungit/microduck-rl) | 在 Pollen 的 microduck_rl 之上训练：HD-1910 任务、ROCm、验收门、sim2sim |
-| `robotd` | [harrysungit/Microduck-kissqy](https://github.com/harrysungit/Microduck-kissqy) | 机器人上的运行时：fanhao375 为 HD-1910 构建的官方守护进程，我们的修复在一个分支上 |
+| `robotd` | [harrysungit/Microduck-kissqy](https://github.com/harrysungit/Microduck-kissqy) | 机器人上的运行时：fork 自 kissqy，分支上是 fanhao375 的 HD-1910 构建（control.48）加我们的修复 |
 | `studio` | [harrysungit/microduck-replica](https://github.com/harrysungit/microduck-replica) | Microduck Studio，机器人上的网页中控（`software/studio`）：fanhao375 的版本，我们的改动在一个分支上 |
 | 本仓库 | | IMU 兼容、主控板启动、舵机工具，以及所有不属于上面几个组件代码的功能 |
 

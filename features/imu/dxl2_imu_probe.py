@@ -1,6 +1,6 @@
 """Read-only probe: which requests does a DXL 2.0 IMU board at ID 200 answer? Writes no register.
 
-robotd's Feetech bus (fanhao375/Microduck-kissqy, `feetech.rs` `identify_imu`) identifies a DXL2
+robotd's Feetech bus (HD-1910 build, `feetech.rs` `identify_imu`) identifies a DXL2
 IMU with READ address 0, 3 bytes (model and firmware version), then reads its data with READ
 address 124, 12 bytes. Some boards sold with their own firmware answer neither; the servo-web
 DXL2 support in fanhao375/microduck-replica (PR #47) reads them with PING and a single-ID

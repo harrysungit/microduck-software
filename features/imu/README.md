@@ -8,10 +8,11 @@ identifies them.
 
 ## Which boards work
 
-Runtime: the HD-1910 build of robotd in
-[fanhao375/Microduck-kissqy](https://github.com/fanhao375/Microduck-kissqy)
-(`microduck-hd1910/firmware/duck-control/src/feetech.rs`, `identify_imu`), and
-our branch of it (`components.toml`, component `robotd`).
+Runtime: the HD-1910 build of robotd (fanhao375's control.48,
+`microduck-hd1910/firmware/duck-control/src/feetech.rs`, `identify_imu`), as
+carried by our branch in
+[harrysungit/Microduck-kissqy](https://github.com/harrysungit/Microduck-kissqy)
+(`components.toml`, component `robotd`).
 
 | IMU | Bus protocol | How robotd identifies and reads it | Where it works | Tested by us |
 |---|---|---|---|---|
